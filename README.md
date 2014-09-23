@@ -1,14 +1,31 @@
-string.js
-===============
+#string.js
 A few javascript functions for strings.
 
-Usage
------
+##Usage
 	var a = "something".startsWith("some");
 
-Methods
--------
-	| startsWith | Checks if a string (x) starts with another string (y).,x.startsWith(y); returns bool. |
-	| endsWith   | Checks if a string (x) ends with another string (y) eg. x.endsWith(y); returns bool.  |
-	| contains   | Checks if a string (x) contains another string (y).,x.contains(y); returns bool.      |
-	| replaceAll | Checks if a string (x) contains another string (y).,x.contains(y); returns bool.      |
+##Methods
+####startsWith
+Returns true if a string starts with another string passed as parameter.
+
+	var a = "something";
+	a.startsWith("some"); // returns true
+
+####endsWith
+Returns true if a string ends with another string passed as parameter.
+
+	a.endsWith("where"); // returns false
+
+####contains
+Returns true if a string contains another string passed as parameter.
+
+	a.contains("me"); // returns true
+####replace
+Replaces all occurances of a string within another string with a new one.
+
+	var s = "something somewhere",
+	    old = "some",
+	    new = "any";
+	s.replaceAll(old, new);
+
+All functions ignores cases. <code><b>true</b></code> can be passed as the last param for case sensitive operation.
