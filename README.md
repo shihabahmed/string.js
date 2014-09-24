@@ -1,5 +1,5 @@
 #string.js
-A few javascript functions for strings.
+A few javascript functions for working with strings.
 
 ##Usage
 	var a = "something".startsWith("some");
@@ -27,5 +27,10 @@ Replaces all occurances of a string within another string with a new one.
 	    old = "some",
 	    new = "any";
 	s.replaceAll(old, new);
+####format
+Formats string
 
-All functions ignores cases. <code><b>true</b></code> can be passed as the last param for case sensitive operation.
+	var str = "{0} is greater than {1}";
+	str = str.format(10, 6); // str = "10 is greater than 6"
+
+All functions (except format()) ignores cases. <code><b>true</b></code> can be passed as the last param for case sensitive operation.
