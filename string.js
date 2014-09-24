@@ -46,3 +46,12 @@ String.prototype.replaceAll = function(oldString, newString, isCaseSensitive) {
 	}
 	return this.replace(regExp, newString);
 };
+
+String.prototype.format = function() {
+   var content = this;
+   for (var i=0; i < arguments.length; i++)    {
+        var replacement = '{' + i + '}';
+        content = content.replace(replacement, arguments[i]); 
+   }
+   return content;
+};
