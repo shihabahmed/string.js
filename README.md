@@ -33,4 +33,4 @@ Formats string
 	var str = "{0} is greater than {1}";
 	str = str.format(10, 6); // str = "10 is greater than 6"
 
-All functions (except format()) ignores cases. <code><b>true</b></code> can be passed as the last param for case sensitive operation.
+All functions (except <code>format</code>) ignores cases. <code><b>true</b></code> can be passed as the last param for case sensitive operation.
